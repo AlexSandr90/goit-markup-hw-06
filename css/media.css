@@ -110,9 +110,6 @@
     }
 
     .address-link {
-        text-decoration: none;
-        letter-spacing: 0.02em;
-        color: #434455;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
@@ -126,39 +123,14 @@
     .superman-section {
         max-width: 1440px;
         padding: 188px 0;
-        margin: 0 auto;
-        background-color: #2E2F42;
-        text-align: center;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
     }
 
     .superman-text {
-        text-align: center;
         font-size: 56px;
-        font-weight: 700;
-        line-height: 1.07em;
-        letter-spacing: 0.02em;
-        color: #FFFFFF;
         max-width: 496px;
-        margin: 0 auto 48px;
     }
 
     .superman-btn {
-        display: block;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.5em;
-        letter-spacing: 0.04em;
-        color: #FFFFFF;
-        border-radius: 4px;
-        background-color: #4D5AE5;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-        padding: 16px 32px;
-        min-width: 169px;
-        margin: 0 auto;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
@@ -169,12 +141,10 @@
 
     /*? ====== Main Principles Section ====== */
 
-    /* .main-principles-section {
+    .main-principles-section {
         padding: 120px 0;
-        background-color: #ffffff;
     }
 
-    .main-principles-container {}
 
     .main-principles-head {
         color: #2e2f42;
@@ -182,18 +152,15 @@
     }
 
     .main-principles {
-        display: flex;
-        justify-content: space-between;
+        flex-direction: row;
         max-width: 1128px;
-        width: 100%;
-        padding: 0;
         gap: 24px;
     }
 
 
     .main-principles_item {
         width: calc((100% - 72px) / 4);
-        color: #434455;
+        margin-bottom: 0;
     }
 
     .principles-icon-container {
@@ -212,7 +179,6 @@
         font-weight: 500;
         line-height: 1.2em;
         letter-spacing: 0.02em;
-        color: #2e2f42;
         margin-bottom: 8px;
     }
 
@@ -221,7 +187,7 @@
         font-weight: 400;
         line-height: 1.5em;
         letter-spacing: 0.02em;
-    } */
+    }
 
 
     /*? ========= Team Section ========= */
