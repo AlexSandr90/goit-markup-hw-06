@@ -56,8 +56,6 @@ body {
     overflow: hidden;
 }
 
-
-
 .container {
     margin: 0 auto;
     width: 100%;
@@ -82,7 +80,8 @@ body {
     display: flex;
     margin: 0 auto;
     width: 100%;
-    max-width: 288px;
+    /* max-width: 288px; */
+    max-width: 100%;
     align-self: center;
     justify-content: space-between;
 }
@@ -231,7 +230,6 @@ body {
 /** ============= Superman Section ======== */
 
 .superman-section {
-    max-width: 320px;
     padding: 72px 0;
     margin: 0 auto;
     background-color: #2E2F42;
