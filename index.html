@@ -634,7 +634,7 @@
 
   <!-- Modal -->
 
-  <!-- <div class="modal-container is-modal-open">
+  <div class="modal-container" id="modal-form">
       <div class="modal-window">
         <button type="button" class="close-btn">
           <svg class="close-btn-img" width="8" height="8">
@@ -717,15 +717,21 @@
               class="visually-hidden form-privacy-checkbox" 
             >
             <label for="user-privacy" class="form-privacy-label">
-              <span class="form-privacy-span">
-                <svg class="form-input-checkbox" width="10" height="8">
-                  <use href="./images/icons.svg#checkbox"></use>
-                </svg>
-              </span>
-              I accept the terms and conditions of the
-              <a class="form-privacy-link" href="">
-                Privacy Policy
-              </a>
+              <div class="privacy-span-container">
+                <span class="form-privacy-span">
+                  <svg class="form-input-checkbox" width="10" height="8">
+                    <use href="./images/icons.svg#checkbox"></use>
+                  </svg>
+                </span>
+              </div>
+              
+              <div class="form-privacy-container">
+                I accept the terms and conditions of the
+                <a class="form-privacy-link" href="">
+                  Privacy Policy
+                </a>
+              </div>
+              
             </label>
           </div>
 
@@ -734,7 +740,7 @@
           </button>
         </form>
       </div>
-  </div> -->
+  </div>
 </body>
   <script src="./js/index.js"></script>
 </html>

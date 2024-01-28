@@ -2,6 +2,14 @@
     .container {
         max-width: 768px;
     }
+
+
+    /*! ================= Modal form ================= */
+
+
+    .modal-window {
+        width: 408px;
+    }
 }
 
 @media screen and (min-width: 1158px) {
@@ -340,11 +348,6 @@
 
     /*! ================= Modal form ================= */
 
-
-    /* .is-modal-open {
-        display: none;
-    }
-
     .modal-container {
         position: fixed;
         top: 0;
@@ -514,5 +517,6 @@
         background-color: #404BBF;
         border: none;
         fill: #F4F4FD;
-    } */
+    } 
+
 }
