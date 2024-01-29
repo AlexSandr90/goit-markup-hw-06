@@ -1,4 +1,8 @@
 @media screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+
     .container {
         max-width: 734px;
     }
@@ -172,6 +176,8 @@
 
     .modal-window {
         width: 408px;
+        top: 96px;
+        transform: translate(-50%) scale(1);
     }
 }
 
@@ -189,18 +195,12 @@
     /**===== Header =====*/
 
     .header-container {
-        display: flex;
-        width: 100%;
         max-width: 1158px;
     }
 
 
     .header {
-        display: flex;
         height: 72px;
-        align-items: center;
-        border-bottom: 1px solid #e7e9fc;
-        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     }
 
     .header-navigation {
@@ -245,11 +245,6 @@
         padding: 188px 0;
     }
 
-    .superman-text {
-        font-size: 56px;
-        max-width: 496px;
-    }
-
     .superman-btn {
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -265,14 +260,7 @@
         padding: 120px 0;
     }
 
-
-    .main-principles-head {
-        color: #2e2f42;
-        margin-bottom: 8px;
-    }
-
     .main-principles {
-        flex-direction: row;
         max-width: 1128px;
         gap: 24px;
     }
@@ -297,18 +285,7 @@
     .main-principles-item-header {
         font-size: 20px;
         font-weight: 500;
-        line-height: 1.2em;
-        letter-spacing: 0.02em;
-        margin-bottom: 8px;
     }
-
-    .main-principles-item-text {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.5em;
-        letter-spacing: 0.02em;
-    }
-
 
     /*? ========= Team Section ========= */
 
@@ -316,9 +293,7 @@
         padding: 120px 0;
     }
 
-
     .team {
-        flex-direction: row;
         max-width: 1128px;
     }
 
@@ -335,19 +310,11 @@
         background-color: #404bbf;
     }
 
-    .social-item-img {
-        fill: #f4f4fd;
-    }
-
     /*? ========== Portfolio Section ========== */
 
     .portfolio-section {
         padding-top: 120px;
         padding-bottom: 120px;
-    }
-
-    .portfolio {
-        flex-direction: row;
     }
 
     .portfolio-item-container {
@@ -372,26 +339,14 @@
     }
 
     .portfolio-item-img {
-        max-width: 360px;
-        width: 100%;
-        height: 300px;
+        width: 360px;
     }
-
 
     /*? =============== FOOTER =============== */
 
     .social-block {
         margin-right: 80px;
         margin-left: 0;
-    }
-
-    .footer {
-        padding: 100px 0;
-    }
-
-    .footer-container {
-        display: flex;
-        align-items: baseline;
     }
 
     .footer-logo-block {
@@ -404,48 +359,8 @@
         display: inline-block;
     }
 
-    .footer-logo-span {
-        color: #F4F4FD;
-    }
-
-    .footer-text {
-        color: #F4F4FD;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.5em;
-        width: 264px;
-        letter-spacing: 0.02em;
-    }
-
-    .social-header-text {
-        color: #FFF;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.5em;
-        letter-spacing: 0.02em;
-        margin-bottom: 16px;
-    }
-
-    .social-section-footer {
-        gap: 16px;
-    }
-
-    .footer-social-link:hover,
-    .footer-social-link:focus {
-        background-color: #31d0aa;
-    }
-
     .subscribe-block {
         max-width: 453px;
-    }
-
-    .subscribe-header-text {
-        margin-bottom: 16px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #ffffff;
     }
 
     .subscribe-form {
@@ -453,138 +368,27 @@
         gap: 24px;
     }
 
-    .subscribe-form-email {}
-
     .form-email-input {
         width: 264px;
         height: 40px;
-        border: 1px solid #ffffff;
-        background-color: transparent;
-        font-size: 12px;
-        letter-spacing: 0.04em;
-        line-height: 2;
-        padding-left: 16px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        color: #ffffff;
-    }
-
-    .subscribe-form-btn {
-        min-width: 165px;
-        height: 40px;
-    }
-
-    .form-btn-img {
-        margin-left: 16px;
     }
 
     /*! ================= Modal form ================= */
 
-    .modal-container {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(46, 47, 66, 0.4);
-        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
     .modal-window {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(1);
-        width: 408px;
-        min-height: 584px;
-        background-color: #fcfcfc;
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 4px;
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        padding: 72px 24px 24px 24px;
-    }
-
-
-    .modal-header-text {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        text-align: center;
-        letter-spacing: 0.02em;
-        color: #2E2F42;
-        margin-bottom: 16px;
-    }
-
-    .modal-form {}
-
-    .modal-form-group {
-        margin-bottom: 8px;
-    }
-
-    .modal-form-label {
-        font-size: 12px;
-        line-height: 1.17;
-        letter-spacing: 0.04em;
-        color: #8e8f99;
-        display: block;
-        margin-bottom: 4px;
-    }
-
-
-    .input-group {
-        position: relative;
-    }
-
-    .modal-form-input {
-        width: 100%;
-        height: 40px;
-        border: 1px solid rgba(46, 47, 66, 0.4);
-        border-radius: 4px;
-        background-color: transparent;
-        padding-left: 38px;
-        outline: transparent;
-        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .modal-form-input:focus {
-        border-color: #4D5AE5;
+        top: 80px;
+        transform: translate(-50%) scale(1);
     }
 
     .modal-form-group.modal-form-input:focus+.form-input-img {
         fill: #4D5AE5;
     }
 
-
-    .form-input-img {
-        position: absolute;
-        left: 16px;
-        top: 50%;
-        transform: translateY(-50%);
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        fill: #2E2F42;
-    }
-
     .modal-form-input:focus+.form-input-img {
         fill: #4D5AE5;
     }
 
-    .form-textarea-group {
-        margin-bottom: 16px;
-    }
-
     .modal-form-textarea {
-        width: 100%;
-        height: 120px;
-        font-size: 12px;
-        line-height: 1.17;
-        letter-spacing: 0.04em;
-        color: rgba(46, 47, 66, 0.4);
-        border: 1px solid rgba(46, 47, 66, 0.4);
-        border-radius: 4px;
-        background-color: transparent;
-        padding: 8px 16px;
-        outline: transparent;
-        resize: none;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
@@ -592,52 +396,7 @@
         border-color: #4D5AE5;
     }
 
-    .modal-form-privacy {
-        margin-bottom: 24px;
-    }
-
-    .form-privacy-label {
-        font-size: 12px;
-        line-height: 1.17;
-        letter-spacing: 0.04em;
-        color: #8e8f99;
-        align-items: center;
-        cursor: pointer;
-    }
-
-    .form-privacy-span {
-        width: 16px;
-        height: 16px;
-        border: 1px solid rgba(46, 47, 66, 0.4);
-        border-radius: 2px;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        fill: transparent;
-        margin-right: 8px;
-    }
-
-    .form-privacy-link {
-        color: #4d5ae5;
-        text-decoration: underline;
-        margin-left: 8px;
-    }
-
     .modal-form-submit {
-        display: block;
-        margin: 0 auto;
-        min-width: 169px;
-        height: 56px;
-        font-family: "Roboto", sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
-        color: #ffffff;
-        cursor: pointer;
-        background-color: #4D5AE5;
-        border: none;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
