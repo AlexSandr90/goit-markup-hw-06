@@ -84,6 +84,14 @@
 
     /*? ============= Superman Section ======== */
 
+    .superman-section {
+        padding: 112px 0;
+    }
+
+    .superman-text {
+        font-size: 56px;
+    }
+
     .main-principles {
         flex-direction: row;
         flex-wrap: wrap;
@@ -126,6 +134,39 @@
         height: 300px;
     }
 
+    .portfolio-item-container {
+        max-width: 356px;
+    }  
+
+    /*? =============== FOOTER =============== */
+
+    .footer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: calc(100% - 200px);
+    }
+
+    .social-block {
+        margin-left: 24px;
+    }
+
+    .subscribe-block {
+        max-width: 100%;
+    }
+
+    .subscribe-header-text {
+        text-align: start;
+    }
+
+    .subscribe-form {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .subscribe-form-email {
+        max-width: 264px;
+    }
+
     /*! ================= Modal form ================= */
 
 
@@ -137,6 +178,7 @@
 @media screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
+        padding: 0 15px;
     }
 
     .wrapper,
@@ -177,6 +219,7 @@
 
     .address-items {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         padding-left: 0;
         gap: 40px;
@@ -308,7 +351,8 @@
     }
 
     .portfolio-item-container {
-        max-width: 288px;
+        max-width: 360px;
+        margin: 0 auto;
     }
 
     .portfolio-item {
@@ -324,10 +368,12 @@
     .item-img-block {
         width: 360px;
         height: 300px;
+
     }
 
     .portfolio-item-img {
         max-width: 360px;
+        width: 100%;
         height: 300px;
     }
 
@@ -336,6 +382,7 @@
 
     .social-block {
         margin-right: 80px;
+        margin-left: 0;
     }
 
     .footer {
@@ -388,7 +435,9 @@
         background-color: #31d0aa;
     }
 
-    .subscribe-block {}
+    .subscribe-block {
+        max-width: 453px;
+    }
 
     .subscribe-header-text {
         margin-bottom: 16px;
