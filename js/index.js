@@ -15,8 +15,7 @@ closedMobileMenuBtn.addEventListener('click', () => {
     mobileMenu.classList.remove('is-modal-open');
 });
 
-orderBtn.addEventListener('click', (e) => {
-    e.preventDefault()
+orderBtn.addEventListener('click', () => {
     modalForm.classList.add('is-modal-open');
 });
 
