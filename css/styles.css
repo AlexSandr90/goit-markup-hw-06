@@ -59,18 +59,8 @@ body {
 .container {
     margin: 0 auto;
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    max-width: 288px;
-}
-
-.wrapper,
-.main {
-    display: flex;
-    flex-direction: column;
-    max-width: 288px;
-    width: 100%;
-    margin: 0 auto;
+    max-width: 320px;
+    padding: 0 16px;
 }
 
 
@@ -112,7 +102,7 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 700;
-    line-height: 1.17em;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
@@ -124,6 +114,7 @@ body {
 
 .mobile-menu {
     display: none;
+    flex-direction: column;
     position: fixed;
     top: 0;
     left: 0;
@@ -131,8 +122,9 @@ body {
     height: 100%;
     background-color: #fff;
     z-index: 10;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 72px 16px 40px;
+    transform: translateY(100%);
+    transition: transform 250ms;
 }
 
 .close-btn {
@@ -172,10 +164,7 @@ body {
 .mobile-navigation {
     display: flex;
     flex-direction: column;
-    min-height: 376px;
-    height: calc(100% - 200px);
-    margin-top: 72px;
-    margin-bottom: 48px;
+    margin-bottom: auto;
     justify-content: space-between;
 }
 
@@ -189,10 +178,8 @@ body {
 .mobile-header-menu-link {
     font-size: 36px;
     font-weight: 700;
-    line-height: 1.5em;
+    line-height: 1.5;
     letter-spacing: 0.02em;
-    padding: 24px 0;
-
     position: relative;
     color: #2E2F42;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -207,8 +194,9 @@ body {
 .mobile-address-section {
     font-size: 20px;
     font-weight: 500;
-    line-height: 1.2em;
+    line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 48px;
 }
 
 .mobile-address-items {
@@ -220,10 +208,7 @@ body {
 
 .mobile-social-section {
     display: flex;
-    justify-content: center;
     gap: 40px;
-    max-width: 280px;
-    margin-bottom: 40px;
 }
 
 /** ============= Superman Section ======== */
@@ -233,7 +218,12 @@ body {
     margin: 0 auto;
     background-color: #2E2F42;
     text-align: center;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)
+        ), 
+        url(../images/hero-bg-mob.jpg),
+        url(../images/hero-bg-mob-2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -243,10 +233,10 @@ body {
     text-align: center;
     font-size: 36px;
     font-weight: 700;
-    line-height: 1.07em;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    max-width: 496px;
+    max-width: 200px;
     margin: 0 auto 48px;
 }
 
@@ -254,7 +244,7 @@ body {
     display: block;
     font-size: 16px;
     font-weight: 500;
-    line-height: 1.5em;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     color: #FFFFFF;
     border-radius: 4px;
@@ -281,17 +271,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 320px;
-    width: 100%;
-    padding: 0;
-    gap: 8px;
+    row-gap: 72px;
 }
 
 
 .main-principles_item {
-    width: calc(100% - 16px);
+    width: 100%;
     color: #434455;
-    margin-bottom: 72px;
 }
 
 .principles-icon-container {
@@ -299,9 +285,10 @@ body {
 }
 
 .main-principles-item-header {
+    text-align: center;
     font-size: 36px;
     font-weight: 700;
-    line-height: 1.2em;
+    line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
@@ -310,7 +297,7 @@ body {
 .main-principles-item-text {
     font-size: 16px;
     font-weight: 500;
-    line-height: 1.5em;
+    line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
@@ -326,7 +313,7 @@ body {
     text-align: center;
     font-size: 36px;
     font-weight: 700;
-    line-height: 1.11em;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
@@ -336,10 +323,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     max-width: 320px;
     width: 100%;
     padding: 0;
-    gap: 24px;
+    gap: 72px;
 }
 
 .team-item {
@@ -363,7 +351,7 @@ body {
     text-align: center;
     font-size: 20px;
     font-weight: 500;
-    line-height: 1.2em;
+    line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
 }
@@ -373,7 +361,7 @@ body {
     text-align: center;
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.5em;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
 }
@@ -418,10 +406,7 @@ body {
     background-color: #ffffff;
 }
 
-.portfolio-container {
-    padding-right: 0;
-    padding-left: 0;
-}
+.portfolio-container {}
 
 
 .portfolio-section-header {
@@ -430,7 +415,7 @@ body {
     text-align: center;
     font-size: 36px;
     font-weight: 700;
-    line-height: 1.11em;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
 }
@@ -438,13 +423,9 @@ body {
 .portfolio {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    padding: 0;
     justify-content: space-between;
     column-gap: 24px;
     row-gap: 48px;
-    cursor: pointer;
-    width: 100%;
 }
 
 .portfolio-item-container {
@@ -487,7 +468,7 @@ body {
     color: #F4F4FD;
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.5em;
+    line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
@@ -499,14 +480,14 @@ body {
     color: #2E2F42;
     font-size: 20px;
     font-weight: 500;
-    line-height: 1.2em;
+    line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
 }
 
 .portfolio-item-text {
     font-size: 16px;
-    line-height: 1.5em;
+    line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
@@ -522,8 +503,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    padding: 0;
-    width: 100%;
 }
 
 .footer-logo-block {
@@ -538,7 +517,7 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 700;
-    line-height: 1.17em;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
@@ -553,8 +532,8 @@ body {
     color: #F4F4FD;
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.5em;
-    width: 264px;
+    line-height: 1.5;
+    width: 288px;
     letter-spacing: 0.02em;
 }
 
@@ -569,7 +548,7 @@ body {
     color: #FFF;
     font-size: 16px;
     font-weight: 500;
-    line-height: 1.5em;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
 }
@@ -828,5 +807,6 @@ input[type="checkbox"]:checked+label span {
 }
 
 .is-modal-open {
-    display: block;
+    display: flex;
+    transform: translateY(0%);
 }

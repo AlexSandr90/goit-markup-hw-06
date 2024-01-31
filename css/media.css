@@ -4,7 +4,7 @@
     }
 
     .container {
-        max-width: 734px;
+        max-width: 768px;
     }
 
     /**===== Header =====*/
@@ -19,7 +19,8 @@
         display: flex;
     }
 
-    .header-menu, .address-section {
+    .header-menu,
+    .address-section {
         display: flex;
     }
 
@@ -90,10 +91,18 @@
 
     .superman-section {
         padding: 112px 0;
+        background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)
+        ), 
+        url(../images/hero-bg-tab.jpg),
+        url(../images/hero-bg-tab-2.jpg);
     }
 
     .superman-text {
         font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
     }
 
     .main-principles {
@@ -103,8 +112,15 @@
     }
 
     .main-principles_item {
-        width: calc((100% - 30px) / 2);
+        width: calc((100% - 26px) / 2);
     }
+
+    /*? ====== Main Principles Section ====== */
+
+    .main-principles-item-header {
+        text-align: start;
+    }
+
 
     /*? ========= Team Section ========= */
 
@@ -116,6 +132,8 @@
         flex-direction: row;
         flex-wrap: wrap;
         max-width: 596px;
+        column-gap: 24px;
+        row-gap: 64px;
     }
 
     .team-item {
@@ -127,27 +145,34 @@
 
     .portfolio {
         flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 72px;
     }
 
     .portfolio-item {
         width: calc((100% - 24px) / 2);
     }
 
-    .item-img-block, .portfolio-item-img {
+    .item-img-block,
+    .portfolio-item-img {
         width: 356px;
         height: 300px;
     }
 
     .portfolio-item-container {
         max-width: 356px;
-    }  
+    }
 
     /*? =============== FOOTER =============== */
 
     .footer-container {
         flex-direction: row;
         flex-wrap: wrap;
-        max-width: calc(100% - 200px);
+        max-width: calc(100% - 186px);
+    }
+
+    .footer-logo {
+        align-self: flex-start;
     }
 
     .social-block {
@@ -185,11 +210,6 @@
     .container {
         max-width: 1158px;
         padding: 0 15px;
-    }
-
-    .wrapper,
-    .main {
-        max-width: 1440px;
     }
 
     /**===== Header =====*/
@@ -243,6 +263,12 @@
     .superman-section {
         max-width: 1440px;
         padding: 188px 0;
+        background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)
+        ), 
+        url(../images/hero-bg.jpg),
+        url(../images/hero-bg.jpg);
     }
 
     .superman-btn {
@@ -312,6 +338,11 @@
 
     /*? ========== Portfolio Section ========== */
 
+    .portfolio {
+        cursor: pointer;
+
+    }
+
     .portfolio-section {
         padding-top: 120px;
         padding-bottom: 120px;
@@ -345,7 +376,7 @@
     /*? =============== FOOTER =============== */
 
     .social-block {
-        margin-right: 80px;
+        /* margin-right: 80px; */
         margin-left: 0;
     }
 
@@ -408,6 +439,6 @@
         background-color: #404BBF;
         border: none;
         fill: #F4F4FD;
-    } 
+    }
 
 }
