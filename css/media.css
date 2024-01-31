@@ -168,7 +168,7 @@
     .footer-container {
         flex-direction: row;
         flex-wrap: wrap;
-        max-width: calc(100% - 186px);
+        max-width: 584px;
     }
 
     .footer-logo {
