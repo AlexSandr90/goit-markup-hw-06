@@ -402,6 +402,7 @@
 
     .social-block {
         margin-right: 80px;
+        margin-bottom: 0;
         margin-left: 0;
         align-items: baseline;
     }
