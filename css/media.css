@@ -9,6 +9,10 @@
 
     /**===== Header =====*/
 
+    .header {
+        height: 72px;
+    }
+
     .mobile-menu-open {
         display: none;
         align-items: center;
@@ -36,6 +40,7 @@
     }
 
     .header-menu-link {
+        display: block;
         font-size: 16px;
         font-weight: 500;
         line-height: 1.5em;
@@ -61,7 +66,7 @@
         display: block;
         position: absolute;
         left: 0;
-        bottom: 5px;
+        bottom: -1px;
         height: 4px;
         width: 100%;
         background-color: #404bbf;
@@ -71,7 +76,6 @@
     .address-items {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         padding-left: 0;
         gap: 12px;
     }
@@ -95,9 +99,19 @@
         rgba(46, 47, 66, 0.7), 
         rgba(46, 47, 66, 0.7)
         ), 
-        url(../images/hero-bg-tab.jpg),
-        url(../images/hero-bg-tab-2.jpg);
+        url(../images/hero-bg-tab.jpg);
     }
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2ddpx) {
+            .superman-section {
+                background-image: linear-gradient(
+                    rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                      url(../images/hero-bg-tab-2.jpg);
+            }
+        }
 
     .superman-text {
         font-size: 56px;
@@ -124,21 +138,12 @@
 
     /*? ========= Team Section ========= */
 
-    .team-container {
-        max-width: 596px;
-    }
-
     .team {
         flex-direction: row;
         flex-wrap: wrap;
-        max-width: 596px;
+        justify-content: center;
         column-gap: 24px;
         row-gap: 64px;
-    }
-
-    .team-item {
-        width: calc((100% - 24px) / 2);
-        max-width: 264px;
     }
 
     /*? ========== Portfolio Section ========== */
@@ -171,16 +176,20 @@
         max-width: 584px;
     }
 
+    .footer-logo-block {
+        width: 264px;
+    }
+
     .footer-logo {
         align-self: flex-start;
     }
 
-    .social-block {
-        margin-left: 24px;
+    .footer-text {
+        width: 264px;
     }
 
-    .subscribe-block {
-        max-width: 100%;
+    .social-block {
+        margin-left: 24px;
     }
 
     .subscribe-header-text {
@@ -192,8 +201,8 @@
         justify-content: flex-start;
     }
 
-    .subscribe-form-email {
-        max-width: 264px;
+    .form-email-input {
+        width: 264px;
     }
 
     /*! ================= Modal form ================= */
@@ -236,7 +245,6 @@
         bottom: -3px;
     }
 
-
     .address-items {
         display: flex;
         flex-direction: row;
@@ -267,8 +275,18 @@
         rgba(46, 47, 66, 0.7), 
         rgba(46, 47, 66, 0.7)
         ), 
-        url(../images/hero-bg.jpg),
         url(../images/hero-bg.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2ddpx) {
+        .superman-section {
+            background-image: linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+                  url(../images/hero-bg-2.jpg);
+        }
     }
 
     .superman-btn {
@@ -291,7 +309,6 @@
         gap: 24px;
     }
 
-
     .main-principles_item {
         width: calc((100% - 72px) / 4);
         margin-bottom: 0;
@@ -311,6 +328,10 @@
     .main-principles-item-header {
         font-size: 20px;
         font-weight: 500;
+    }
+
+    .main-principles-item-text {
+        font-weight: 400;
     }
 
     /*? ========= Team Section ========= */
@@ -375,9 +396,14 @@
 
     /*? =============== FOOTER =============== */
 
+    .footer-container {
+        align-items: baseline;
+    }
+
     .social-block {
-        /* margin-right: 80px; */
+        margin-right: 80px;
         margin-left: 0;
+        align-items: baseline;
     }
 
     .footer-logo-block {

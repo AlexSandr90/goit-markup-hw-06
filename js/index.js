@@ -7,12 +7,12 @@ const closeModalBtn = document.getElementById('close-modal-btn');
 
 
 hamburgerBtn.addEventListener('click', () => {
-    mobileMenu.classList.add('is-modal-open');
+    mobileMenu.classList.add('is-mobile-menu-open');
 });
 
 
 closedMobileMenuBtn.addEventListener('click', () => {
-    mobileMenu.classList.remove('is-modal-open');
+    mobileMenu.classList.remove('is-mobile-menu-open');
 });
 
 orderBtn.addEventListener('click', () => {
